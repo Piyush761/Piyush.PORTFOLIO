@@ -177,7 +177,7 @@
     <a href="#contact">Contact</a>
   </nav>
   <header>
-    <h1>My Unique Portfolio</h1>
+    <h1>My Portfolio</h1>
   </header>
   <div class="container">
     <section id="about">
