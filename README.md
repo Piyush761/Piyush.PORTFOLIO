@@ -277,7 +277,7 @@
     </section>
     <section id="contact">
       <h2>Contact</h2>
-      <p>Get in touch via email at <a href="mailto:piyushsaini445@gmail.com" style="color: var(--primary-color);">your.email@example.com</a> or connect on <a href="https://www.linkedin.com/in/piyush-saini-387516330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="color: var(--primary-color);">LinkedIn</a>.</p>
+      <p>Get in touch via email at <a href="piyushsaini445@gmail.com" style="color: var(--primary-color);">your.email@example.com</a> or connect on <a href="https://www.linkedin.com/in/piyush-saini-387516330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="color: var(--primary-color);">LinkedIn</a>.</p>
     </section>
   </div>
   <footer>
