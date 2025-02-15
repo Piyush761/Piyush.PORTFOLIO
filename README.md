@@ -214,7 +214,7 @@
     <section id="about">
       <h2>About Me</h2>
       <div class="profile">
-        <img src="" alt="Profile Image">
+        <img src="https://github.com/Piyush761/Piyush.PORTFOLIO/blob/b7b219b13fcc9522bcedf23d10eea39b7643bac0/Piyush.jpg" alt="Profile Image">
         <p>Hello, I'm Piyush Saini, a dynamic web developer and creative designer with a passion for building innovative digital experiences. I blend modern design with functional development to bring ideas to life.</p>
       </div>
     </section>
