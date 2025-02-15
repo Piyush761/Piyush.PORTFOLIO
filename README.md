@@ -159,7 +159,7 @@
     .card-front, .card-back {
       position: absolute;
       width: 100%;
-      height: 100%;
+      height: 600%;
       backface-visibility: hidden;
       border-radius: 10px;
       display: flex;
@@ -221,7 +221,7 @@
     <section id="education">
       <h2>Education</h2>
       <p><strong>Bachelors of Computer Application</strong><br>
-         Galgotias University, [2025]
+         Galgotias University, [2026]
       </p>
     </section>
     <section id="skills">
