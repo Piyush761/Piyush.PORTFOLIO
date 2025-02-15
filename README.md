@@ -129,7 +129,7 @@
     /* Certificate Section */
     .certificate img {
       width: 200%;
-      max-width: 800px;
+      max-width: 600px;
       display: block;
       margin: 0 auto;
       border: 4px solid var(--primary-color);
