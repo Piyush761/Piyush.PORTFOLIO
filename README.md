@@ -271,7 +271,7 @@
       <p>My Score Card Certificate</p>
       <div class="certificate">
         <a href="https://via.placeholder.com/600x400" target="_blank">
-          <img src="card.jpg" alt="Score Card Certificate">
+          <img src="card.jpg/600x400" alt="Score Card Certificate">
         </a>
       </div>
     </section>
