@@ -2,119 +2,146 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Unique 3D Portfolio</title>
+  <title>My Attractive 3D Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    /* Reset & Base Styles */
+    /* Global Styles & Variables */
+    :root {
+      --primary-color: #f39c12;
+      --secondary-color: #333;
+      --bg-color: #111;
+      --text-color: #fff;
+      --accent-color: #3498db;
+    }
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    body {
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      background: #111;
-      color: #fff;
-      overflow-x: hidden;
+    body, html {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      scroll-behavior: smooth;
     }
     a { text-decoration: none; color: inherit; }
-
+    
     /* Navigation */
     nav {
       position: fixed;
-      top: 0;
       width: 100%;
-      background: rgba(0, 0, 0, 0.8);
-      padding: 15px 0;
-      z-index: 100;
+      background: rgba(0, 0, 0, 0.85);
       display: flex;
       justify-content: center;
+      padding: 1rem;
+      z-index: 1000;
     }
     nav a {
-      margin: 0 20px;
+      margin: 0 1rem;
       font-size: 1.1rem;
       transition: color 0.3s;
     }
     nav a:hover {
-      color: #f39c12;
+      color: var(--primary-color);
     }
-
-    /* Header with Parallax & 3D Effect */
+    
+    /* Header with Parallax Background & 3D Text Animation */
     header {
-      position: relative;
       height: 100vh;
-      background: url('https://via.placeholder.com/1500x600') center center/cover;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('https://via.placeholder.com/1500x800') center/cover no-repeat;
       display: flex;
-      align-items: center;
+      flex-direction: column;
       justify-content: center;
-      perspective: 1000px;
+      align-items: center;
+      text-align: center;
+      position: relative;
     }
     header h1 {
       font-size: 4rem;
       text-transform: uppercase;
       letter-spacing: 2px;
-      transform: translateZ(50px);
-      animation: float 6s ease-in-out infinite;
+      animation: fadeInDown 1.5s ease-out;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
     }
-    @keyframes float {
-      0%, 100% { transform: translateZ(50px) translateY(0); }
-      50% { transform: translateZ(50px) translateY(-20px); }
+    header p {
+      font-size: 1.5rem;
+      animation: fadeInUp 1.5s ease-out;
+      margin-top: 1rem;
     }
-
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
     /* Main Container */
     .container {
-      width: 90%;
       max-width: 1200px;
-      margin: 140px auto 40px; /* leave room for fixed nav */
-      padding: 20px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
     }
     section {
-      background: #222;
-      padding: 40px;
-      margin-bottom: 60px;
-      border-radius: 10px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.6);
+      padding: 4rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
     }
+    section:last-child { border-bottom: none; }
     section h2 {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 2rem;
       font-size: 2.5rem;
+      color: var(--primary-color);
     }
     section p, section ul {
       line-height: 1.6;
       font-size: 1.1rem;
       text-align: center;
     }
-    section ul {
-      list-style: none;
-      padding: 0;
-    }
+    section ul { list-style: none; padding: 0; }
     section ul li {
       display: inline-block;
       margin: 0 10px;
-      background: #f39c12;
-      color: #111;
+      background: var(--primary-color);
+      color: var(--bg-color);
       padding: 5px 10px;
       border-radius: 5px;
     }
-    /* Profile image styling */
-    .profile-img {
-      display: block;
+    
+    /* Profile Section */
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .profile img {
       width: 150px;
       height: 150px;
-      margin: 0 auto 20px;
       border-radius: 50%;
-      border: 4px solid #f39c12;
+      border: 5px solid var(--primary-color);
       object-fit: cover;
+      margin-bottom: 1rem;
     }
-
+    
+    /* Certificate Section */
+    .certificate img {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 0 auto;
+      border: 4px solid var(--primary-color);
+      border-radius: 10px;
+    }
+    
     /* 3D Card Grid for Projects */
     .card-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-gap: 40px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
     }
     .card {
       perspective: 1000px;
@@ -135,38 +162,40 @@
       height: 100%;
       backface-visibility: hidden;
       border-radius: 10px;
-    }
-    .card-front {
-      background: #f39c12;
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 1rem;
+    }
+    .card-front {
+      background: var(--primary-color);
+      color: var(--bg-color);
       font-size: 1.8rem;
-      color: #111;
     }
     .card-back {
-      background: #fff;
-      color: #111;
+      background: var(--text-color);
+      color: var(--bg-color);
       transform: rotateY(180deg);
-      padding: 20px;
+      text-align: left;
       overflow-y: auto;
     }
-
+    
     /* Footer */
     footer {
-      background: #111;
       text-align: center;
-      padding: 20px;
-      border-top: 1px solid #333;
+      padding: 2rem;
+      background: var(--secondary-color);
     }
-
-    /* Responsive Design */
+    footer p { margin: 0; }
+    
+    /* Responsive Adjustments */
     @media (max-width: 768px) {
       header h1 { font-size: 2.5rem; }
       nav { flex-direction: column; }
       nav a { margin: 10px 0; }
     }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav>
@@ -174,22 +203,25 @@
     <a href="#education">Education</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
+    <a href="#certificate">Certificate</a>
     <a href="#contact">Contact</a>
   </nav>
   <header>
     <h1>My Portfolio</h1>
+    <p>Innovative | Creative | Passionate</p>
   </header>
   <div class="container">
     <section id="about">
       <h2>About Me</h2>
-      <img src="https://github.com/Piyush761/Piyush.PORTFOLIO/blob/f4efe63c77d7889520c6befd8219155bfc69c2fd/Piyush.jpg" alt="Profile Image" class="profile-img">
-      <p>Hello! I'm Piyush Saini, a creative web developer and designer who loves pushing boundaries and exploring new technologies. My passion lies in crafting interactive, immersive web experiences that captivate audiences. Welcome to my portfolio!</p>
+      <div class="profile">
+        <img src="" alt="Profile Image">
+        <p>Hello, I'm Piyush Saini, a dynamic web developer and creative designer with a passion for building innovative digital experiences. I blend modern design with functional development to bring ideas to life.</p>
+      </div>
     </section>
     <section id="education">
       <h2>Education</h2>
-      <p>Bachelors of Computer Application<br>
-         Galgotias University<br>
-         [2025]
+      <p><strong>Bachelors of Computer Application</strong><br>
+         Galgotias University, [2025]
       </p>
     </section>
     <section id="skills">
@@ -199,6 +231,7 @@
         <li>CSS</li>
         <li>Python</li>
 	<li>C</li>
+	<li>Basic Github</li>
       </ul>
     </section>
     <section id="projects">
@@ -206,46 +239,49 @@
       <div class="card-grid">
         <div class="card">
           <div class="card-inner">
-            <div class="card-front">
-              Project 1
-            </div>
+            <div class="card-front">Project 1</div>
             <div class="card-back">
               <h3>Project One</h3>
-              <p>This project showcases my ability to build a responsive and interactive web application with stunning 3D effects and animations. It’s a blend of creativity and technical prowess.</p>
+              <p>A responsive web application with interactive features and modern design aesthetics. Leveraging cutting-edge technologies to deliver an engaging user experience.</p>
             </div>
           </div>
         </div>
         <div class="card">
           <div class="card-inner">
-            <div class="card-front">
-              Project 2
-            </div>
+            <div class="card-front">Project 2</div>
             <div class="card-back">
               <h3>Project Two</h3>
-              <p>An innovative platform that integrates cutting-edge design with robust functionality. The project features dynamic content, API integrations, and modern web technologies.</p>
+              <p>An innovative project that integrates APIs and real-time data to create dynamic and interactive web solutions.</p>
             </div>
           </div>
         </div>
         <div class="card">
           <div class="card-inner">
-            <div class="card-front">
-              Project 3
-            </div>
+            <div class="card-front">Project 3</div>
             <div class="card-back">
               <h3>Project Three</h3>
-              <p>A creative exploration of 3D transformations and interactive UI. This project reflects my commitment to pushing the boundaries of conventional web design and delivering unique digital experiences.</p>
+              <p>A creative exploration of UI/UX design combined with robust backend development to build a seamless digital experience.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <section id="certificate">
+      <h2>Certificate</h2>
+      <p>My Score Card Certificate</p>
+      <div class="certificate">
+        <a href="https://via.placeholder.com/600x400" target="_blank">
+          <img src="https://via.placeholder.com/600x400" alt="Score Card Certificate">
+        </a>
+      </div>
+    </section>
     <section id="contact">
       <h2>Contact</h2>
-      <p>I'd love to connect! Reach out via email at <a href="mailto:your.email@example.com" style="color: #f39c12;">piyushsaini445@email.com</a> or connect with me on <a href="https://www.linkedin.com/in/piyush-saini-387516330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="color: #f39c12;">LinkedIn</a>.</p>
+      <p>Get in touch via email at <a href="mailto:piyushsaini445@gmail.com" style="color: var(--primary-color);">your.email@example.com</a> or connect on <a href="https://www.linkedin.com/in/piyush-saini-387516330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="color: var(--primary-color);">LinkedIn</a>.</p>
     </section>
   </div>
   <footer>
-    <p>&copy; 2023 Piyush Saini. All rights reserved.</p>
+    <p>&copy; 2023 Piyush saini. All rights reserved.</p>
   </footer>
 </body>
 </html>
