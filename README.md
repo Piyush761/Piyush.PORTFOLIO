@@ -128,8 +128,8 @@
     
     /* Certificate Section */
     .certificate img {
-      width: 100%;
-      max-width: 600px;
+      width: 200%;
+      max-width: 800px;
       display: block;
       margin: 0 auto;
       border: 4px solid var(--primary-color);
