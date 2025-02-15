@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Attractive 3D Portfolio</title>
+  <title>My Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     /* Global Styles & Variables */
@@ -214,7 +214,7 @@
     <section id="about">
       <h2>About Me</h2>
       <div class="profile">
-        <img src="" alt="Profile Image">
+        <img src="https://github.com/Piyush761/Piyush.PORTFOLIO/blob/dbdcde09a092f08352fd08670e22d72f094405f0/Piyush.jpg" alt="Profile Image">
         <p>Hello, I'm Piyush Saini, a dynamic web developer and creative designer with a passion for building innovative digital experiences. I blend modern design with functional development to bring ideas to life.</p>
       </div>
     </section>
