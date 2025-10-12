@@ -1,9 +1,9 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Piyush Saini | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     /* ==================== GLOBAL VARIABLES ==================== */
     :root {
@@ -22,11 +22,16 @@
       box-sizing: border-box;
     }
     
+    html {
+      scroll-behavior: smooth;
+    }
+    
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: var(--dark);
       color: var(--light);
       overflow-x: hidden;
+      line-height: 1.6;
     }
     
     /* ==================== NAVIGATION ==================== */
@@ -264,6 +269,9 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 2rem;
       margin-top: 3rem;
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 0 2rem;
     }
     
     .stat-card {
@@ -422,6 +430,14 @@
       justify-content: center;
       font-size: 3rem;
       color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .project-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
     
     .project-content {
@@ -559,6 +575,7 @@
       z-index: 2000;
       align-items: center;
       justify-content: center;
+      padding: 2rem;
     }
     
     .modal.active {
@@ -584,6 +601,13 @@
       font-size: 2rem;
       color: white;
       cursor: pointer;
+      background: rgba(0,0,0,0.5);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     
     /* ==================== SECTION HEADER ==================== */
@@ -605,6 +629,57 @@
     .section-header p {
       color: #aaa;
       font-size: 1.1rem;
+    }
+    
+    /* ==================== VIDEO SECTION ==================== */
+    .video-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      margin-top: 2rem;
+    }
+    
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      border: 2px solid rgba(255,255,255,0.1);
+    }
+    
+    /* ==================== FOOTER ==================== */
+    footer {
+      background: rgba(0,0,0,0.8);
+      padding: 3rem 2rem;
+      text-align: center;
+      margin-top: 4rem;
+    }
+    
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .social-links a {
+      color: var(--light);
+      font-size: 1.5rem;
+      transition: all 0.3s;
+    }
+    
+    .social-links a:hover {
+      color: var(--primary);
+      transform: translateY(-5px);
     }
     
     /* ==================== RESPONSIVE ==================== */
@@ -644,6 +719,14 @@
       .cta-buttons {
         flex-direction: column;
       }
+      
+      .certificates-gallery {
+        grid-template-columns: 1fr;
+      }
+      
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -658,6 +741,7 @@
       <li><a href="#" onclick="showPage('skills')">Skills</a></li>
       <li><a href="#" onclick="showPage('projects')">Projects</a></li>
       <li><a href="#" onclick="showPage('certificates')">Certificates</a></li>
+      <li><a href="#" onclick="showPage('video')">Video</a></li>
       <li><a href="#" onclick="showPage('contact')">Contact</a></li>
     </ul>
     <div class="hamburger" onclick="toggleMenu()">
@@ -689,7 +773,9 @@
     </div>
     <div class="about-container">
       <div class="profile-card">
-        <img src="Piyush.jpg" alt="Piyush Saini" class="profile-img">
+        <!-- REPLACE THIS IMAGE WITH YOUR PROFILE PHOTO -->
+        <!-- Add your profile photo as "profile.jpg" in the same folder -->
+        <img src="profile.jpg" alt="Piyush Saini" class="profile-img" onerror="this.src='https://via.placeholder.com/200/667eea/ffffff?text=PS'">
         <h3>Piyush Saini</h3>
         <p>Full Stack Developer</p>
       </div>
@@ -749,45 +835,59 @@
     <div class="skills-container">
       <div class="skills-grid">
         <div class="skill-card">
-          <div class="skill-icon">🌐</div>
+          <div class="skill-icon"><i class="fab fa-html5"></i></div>
           <h3>HTML5</h3>
           <div class="skill-progress">
             <div class="skill-progress-bar" style="width: 90%"></div>
           </div>
         </div>
         <div class="skill-card">
-          <div class="skill-icon">🎨</div>
+          <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
           <h3>CSS3</h3>
           <div class="skill-progress">
             <div class="skill-progress-bar" style="width: 85%"></div>
           </div>
         </div>
         <div class="skill-card">
-          <div class="skill-icon">🐍</div>
+          <div class="skill-icon"><i class="fab fa-js"></i></div>
+          <h3>JavaScript</h3>
+          <div class="skill-progress">
+            <div class="skill-progress-bar" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-python"></i></div>
           <h3>Python</h3>
           <div class="skill-progress">
             <div class="skill-progress-bar" style="width: 80%"></div>
           </div>
         </div>
         <div class="skill-card">
-          <div class="skill-icon">⚙️</div>
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
           <h3>C Programming</h3>
           <div class="skill-progress">
             <div class="skill-progress-bar" style="width: 75%"></div>
           </div>
         </div>
         <div class="skill-card">
-          <div class="skill-icon">🔧</div>
+          <div class="skill-icon"><i class="fab fa-github"></i></div>
           <h3>GitHub</h3>
           <div class="skill-progress">
             <div class="skill-progress-bar" style="width: 70%"></div>
           </div>
         </div>
         <div class="skill-card">
-          <div class="skill-icon">💡</div>
+          <div class="skill-icon"><i class="fas fa-lightbulb"></i></div>
           <h3>Problem Solving</h3>
           <div class="skill-progress">
             <div class="skill-progress-bar" style="width: 88%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <h3>MySQL</h3>
+          <div class="skill-progress">
+            <div class="skill-progress-bar" style="width: 75%"></div>
           </div>
         </div>
       </div>
@@ -802,7 +902,11 @@
     </div>
     <div class="projects-grid">
       <div class="project-card" onclick="openProjectModal('project1')">
-        <div class="project-image">🚀</div>
+        <div class="project-image">
+          <!-- REPLACE THIS WITH YOUR PROJECT SCREENSHOT -->
+          <!-- Add your project screenshot as "project1.jpg" in the same folder -->
+          <img src="project1.jpg" alt="Project 1" onerror="this.parentElement.innerHTML='🚀'">
+        </div>
         <div class="project-content">
           <h3>Responsive Web App</h3>
           <p>A modern, fully responsive web application with interactive features and seamless user experience across all devices.</p>
@@ -814,7 +918,11 @@
         </div>
       </div>
       <div class="project-card" onclick="openProjectModal('project2')">
-        <div class="project-image">🎯</div>
+        <div class="project-image">
+          <!-- REPLACE THIS WITH YOUR PROJECT SCREENSHOT -->
+          <!-- Add your project screenshot as "project2.jpg" in the same folder -->
+          <img src="project2.jpg" alt="Project 2" onerror="this.parentElement.innerHTML='🎯'">
+        </div>
         <div class="project-content">
           <h3>API Integration Project</h3>
           <p>Dynamic web solution integrating real-time APIs to deliver live data and interactive functionality.</p>
@@ -826,7 +934,11 @@
         </div>
       </div>
       <div class="project-card" onclick="openProjectModal('project3')">
-        <div class="project-image">✨</div>
+        <div class="project-image">
+          <!-- REPLACE THIS WITH YOUR PROJECT SCREENSHOT -->
+          <!-- Add your project screenshot as "project3.jpg" in the same folder -->
+          <img src="project3.jpg" alt="Project 3" onerror="this.parentElement.innerHTML='✨'">
+        </div>
         <div class="project-content">
           <h3>UI/UX Portfolio</h3>
           <p>Creative exploration combining modern design principles with robust development for seamless digital experiences.</p>
@@ -848,20 +960,43 @@
     </div>
     <div class="certificates-gallery">
       <div class="certificate-card">
-        <img src="card.jpg" alt="Certificate 1" class="certificate-img" onclick="openModal(this.src)">
+        <!-- REPLACE THIS WITH YOUR CERTIFICATE IMAGE -->
+        <!-- Add your certificate as "certificate1.jpg" in the same folder -->
+        <img src="certificate1.jpg" alt="Certificate 1" class="certificate-img" onclick="openModal(this.src)" onerror="this.src='https://via.placeholder.com/500x350/667eea/ffffff?text=Certificate+1'">
         <h3>Score Card Certificate</h3>
         <p>Academic achievement certificate showcasing exceptional performance</p>
       </div>
       <div class="certificate-card">
-        <img src="https://via.placeholder.com/500x350/667eea/ffffff?text=Certificate+2" alt="Certificate 2" class="certificate-img" onclick="openModal(this.src)">
+        <!-- REPLACE THIS WITH YOUR CERTIFICATE IMAGE -->
+        <!-- Add your certificate as "certificate2.jpg" in the same folder -->
+        <img src="certificate2.jpg" alt="Certificate 2" class="certificate-img" onclick="openModal(this.src)" onerror="this.src='https://via.placeholder.com/500x350/764ba2/ffffff?text=Certificate+2'">
         <h3>Web Development Course</h3>
         <p>Completed comprehensive web development training</p>
       </div>
       <div class="certificate-card">
-        <img src="https://via.placeholder.com/500x350/764ba2/ffffff?text=Certificate+3" alt="Certificate 3" class="certificate-img" onclick="openModal(this.src)">
+        <!-- REPLACE THIS WITH YOUR CERTIFICATE IMAGE -->
+        <!-- Add your certificate as "certificate3.jpg" in the same folder -->
+        <img src="certificate3.jpg" alt="Certificate 3" class="certificate-img" onclick="openModal(this.src)" onerror="this.src='https://via.placeholder.com/500x350/f093fb/ffffff?text=Certificate+3'">
         <h3>Programming Fundamentals</h3>
         <p>Mastered core programming concepts and best practices</p>
       </div>
+    </div>
+  </div>
+
+  <!-- VIDEO PAGE -->
+  <div class="page" id="video">
+    <div class="section-header">
+      <h2>Video Introduction</h2>
+      <p>Watch my project demo or introduction video</p>
+    </div>
+    <div class="video-container">
+      <p>Here's a video introduction about me and my work. You can replace this video with your own project demo or introduction video.</p>
+      <div class="video-wrapper">
+        <!-- REPLACE THIS EMBED CODE WITH YOUR OWN YOUTUBE OR VIMEO VIDEO -->
+        <!-- Replace the src with your YouTube or Vimeo embed URL -->
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p class="video-note">Note: Replace this video with your own by updating the iframe src attribute in the HTML code.</p>
     </div>
   </div>
 
@@ -874,21 +1009,28 @@
     <div class="contact-container">
       <div class="contact-info">
         <div class="contact-item">
-          <div class="contact-icon">📧</div>
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
           <div>
             <h4>Email</h4>
             <p>piyushsaini445@gmail.com</p>
           </div>
         </div>
         <div class="contact-item">
-          <div class="contact-icon">💼</div>
+          <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
           <div>
             <h4>LinkedIn</h4>
             <p><a href="https://www.linkedin.com/in/piyush-saini-387516330" target="_blank" style="color: var(--primary);">Connect with me</a></p>
           </div>
         </div>
         <div class="contact-item">
-          <div class="contact-icon">📱</div>
+          <div class="contact-icon"><i class="fab fa-github"></i></div>
+          <div>
+            <h4>GitHub</h4>
+            <p><a href="https://github.com/yourusername" target="_blank" style="color: var(--primary);">View my projects</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
           <div>
             <h4>Location</h4>
             <p>India</p>
@@ -897,9 +1039,134 @@
       </div>
       <div class="contact-form">
         <h3>Send Message</h3>
-        <form>
+        <form id="contactForm">
           <div class="form-group">
             <input type="text" placeholder="Your Name" required>
           </div>
           <div class="form-group">
             <input type="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL FOR CERTIFICATES -->
+  <div class="modal" id="imageModal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal()">&times;</span>
+      <img id="modalImage" src="" alt="Certificate">
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/piyush-saini-387516330" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:piyushsaini445@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p>&copy; 2023 Piyush Saini. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Page Navigation Function
+    function showPage(pageId) {
+      // Hide all pages
+      const pages = document.querySelectorAll('.page');
+      pages.forEach(page => {
+        page.classList.remove('active');
+      });
+      
+      // Show selected page
+      const activePage = document.getElementById(pageId);
+      if (activePage) {
+        activePage.classList.add('active');
+      }
+      
+      // Close mobile menu if open
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.remove('active');
+      
+      // Scroll to top
+      window.scrollTo(0, 0);
+    }
+
+    // Mobile Menu Toggle Function
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('active');
+    }
+
+    // Modal Functions
+    function openModal(imgSrc) {
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('modalImage');
+      
+      if (modal && modalImg) {
+        modalImg.src = imgSrc;
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('imageModal');
+      if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      }
+    }
+
+    // Project Modal Function (for future implementation)
+    function openProjectModal(projectId) {
+      // This function can be expanded to show detailed project information
+      alert('Project details for ' + projectId + ' would be shown here.');
+    }
+
+    // Form Submission Handler
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your message! I will get back to you soon.');
+      this.reset();
+    });
+
+    // Animate progress bars when skills section is viewed
+    function animateProgressBars() {
+      const progressBars = document.querySelectorAll('.skill-progress-bar');
+      progressBars.forEach(bar => {
+        const width = bar.style.width;
+        bar.style.width = '0';
+        setTimeout(() => {
+          bar.style.width = width;
+        }, 300);
+      });
+    }
+
+    // Observe when skills section comes into view
+    const skillsSection = document.getElementById('skills');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateProgressBars();
+        }
+      });
+    }, { threshold: 0.5 });
+
+    if (skillsSection) {
+      observer.observe(skillsSection);
+    }
+
+    // Close modal when clicking outside the image
+    document.getElementById('imageModal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeModal();
+      }
+    });
+  </script>
+</body>
+</html>
