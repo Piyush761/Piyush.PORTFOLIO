@@ -775,7 +775,7 @@
       <div class="profile-card">
         <!-- REPLACE THIS IMAGE WITH YOUR PROFILE PHOTO -->
         <!-- Add your profile photo as "profile.jpg" in the same folder -->
-        <img src="profile.jpg" alt="Piyush Saini" class="profile-img" onerror="this.src='https://via.placeholder.com/200/667eea/ffffff?text=PS'">
+        <img src="Piyush.jpg" alt="Piyush Saini" class="profile-img" onerror="this.src='https://via.placeholder.com/200/667eea/ffffff?text=PS'">
         <h3>Piyush Saini</h3>
         <p>Full Stack Developer</p>
       </div>
