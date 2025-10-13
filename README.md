@@ -954,61 +954,64 @@
   </div>
   
   <!-- CERTIFICATES PAGE -->
-  <div class="page" id="certificates">
-    <div class="section-header">
-      <h2>Certificates</h2>
-      <p>My achievements and credentials</p>
-    </div>
-    <div class="certificates-gallery">
-      <div class="certificate-card">
-        <img src="images/scaler-python-certificate.jpg" alt="Scaler Python Certificate" class="certificate-img" onclick="openModal(this.src)">
-        <h3>Scaler Python Certificate</h3>
-        <p>Python course completion by Scaler Academy</p>
-      </div>
-
-      <div class="certificate-card">
-        <img src="images/WADHANIa311f5aa.jpg" alt="Wadhwani Foundation Certificate" class="certificate-img" onclick="openModal(this.src)">
-        <h3>Wadhwani Foundation Certificate</h3>
-        <p>Entrepreneurship and Innovation training</p>
-      </div>
-
-      <div class="certificate-card">
-        <img src="images/CERtificate791af2a6.jpg" alt="Python fundamentals" class="certificate-img" onclick="openModal(this.src)">
-        <h3>Python fundamentals</h3>
-        <p>Recognized for exceptional performance</p>
-      </div>
-
-      <div class="certificate-card">
-        <img src="images/DELOITTEcertificate.jpg" alt="Deloitte Virtual Internship" class="certificate-img" onclick="openModal(this.src)">
-        <h3>Deloitte Virtual Internship</h3>
-        <p>Completed Deloitte Technology Consulting Program</p>
-      </div>
-
-      <div class="certificate-card">
-        <img src="images/SkillsScoreCard.jpg" alt="Wadhwani Skills Score Card" class="certificate-img" onclick="openModal(this.src)">
-        <h3>Wadhwani Skills Score Card</h3>
-        <p>Technical and analytical skills assessment</p>
-      </div>
-
-      <div class="certificate-card">
-        <img src="images/ai-ml-intership-454120.jpg" alt="Eduskills AI-ML Internship Certificate" class="certificate-img" onclick="openModal(this.src)">
-        <h3>Eduskills AI-ML Internship</h3>
-        <p>Google Artificial Intelligence and Machine Learning Virtual Internship</p>
-      </div>
-
-      <div class="certificate-card">
-        <img src="images/8470834_85200881749994789436.jpg" alt="Simplilearn Certificate 1" class="certificate-img" onclick="openModal(this.src)">
-        <h3>Simplilearn Certificate 1</h3>
-        <p>Machine Learning Using Python</p>
-      </div>
-
-      <div class="certificate-card">
-        <img src="images/8519669_85200881750874900752.jpg" alt="Simplilearn Certificate 2" class="certificate-img" onclick="openModal(this.src)">
-        <h3>Simplilearn Certificate 2</h3>
-        <p>Introduction to Artificial Intelligence</p>
-      </div>
-    </div>
+<div class="page" id="certificates">
+  <div class="section-header">
+    <h2>Certificates</h2>
+    <p>My achievements and credentials</p>
   </div>
+  <div class="certificates-gallery">
+
+    <div class="certificate-card">
+      <img src="images/scaler python certificate.jpg" alt="Scaler Python Certificate" class="certificate-img" onclick="openModal(this.src)">
+      <h3>Scaler Python Certificate</h3>
+      <p>Python course completion by Scaler Academy</p>
+    </div>
+
+    <div class="certificate-card">
+      <img src="images/WADHANIa311f5aa.jpg" alt="Wadhwani Foundation Certificate" class="certificate-img" onclick="openModal(this.src)">
+      <h3>Wadhwani Foundation Certificate</h3>
+      <p>Entrepreneurship and Innovation training</p>
+    </div>
+
+    <div class="certificate-card">
+      <img src="images/CERTificate791af2a6.jpg" alt="Python Fundamentals" class="certificate-img" onclick="openModal(this.src)">
+      <h3>Python Fundamentals</h3>
+      <p>Recognized for exceptional performance</p>
+    </div>
+
+    <div class="certificate-card">
+      <img src="images/DELOITTEcertificate.pdf" alt="Deloitte Virtual Internship" class="certificate-img" onclick="openModal(this.src)">
+      <h3>Deloitte Virtual Internship</h3>
+      <p>Completed Deloitte Technology Consulting Program</p>
+    </div>
+
+    <div class="certificate-card">
+      <img src="images/SkillsScoreCard.pdf" alt="Wadhwani Skills Score Card" class="certificate-img" onclick="openModal(this.src)">
+      <h3>Wadhwani Skills Score Card</h3>
+      <p>Technical and analytical skills assessment</p>
+    </div>
+
+    <div class="certificate-card">
+      <img src="images/ai-ml intership 454120.pdf" alt="Eduskills AI-ML Internship Certificate" class="certificate-img" onclick="openModal(this.src)">
+      <h3>Eduskills AI-ML Internship</h3>
+      <p>Google Artificial Intelligence and Machine Learning Virtual Internship</p>
+    </div>
+
+    <div class="certificate-card">
+      <img src="images/8470834_85200881749994789436.pdf" alt="Simplilearn Certificate 1" class="certificate-img" onclick="openModal(this.src)">
+      <h3>Simplilearn Certificate 1</h3>
+      <p>Machine Learning Using Python</p>
+    </div>
+
+    <div class="certificate-card">
+      <img src="images/8519669_85200881750874900752.pdf" alt="Simplilearn Certificate 2" class="certificate-img" onclick="openModal(this.src)">
+      <h3>Simplilearn Certificate 2</h3>
+      <p>Introduction to Artificial Intelligence</p>
+    </div>
+
+  </div>
+</div> 
+
 
   <!-- VIDEO PAGE -->
   <div class="page" id="video">
