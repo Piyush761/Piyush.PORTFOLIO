@@ -953,64 +953,81 @@
     </div>
   </div>
   
-  <!-- CERTIFICATES PAGE -->
+  <!-- ✅ CERTIFICATES PAGE (Supports PDF + JPG Smoothly) -->
 <div class="page" id="certificates">
   <div class="section-header">
     <h2>Certificates</h2>
     <p>My achievements and credentials</p>
   </div>
+
   <div class="certificates-gallery">
 
+    <!-- 🔹 Scaler Python Certificate (JPG) -->
     <div class="certificate-card">
       <img src="images/scaler python certificate.jpg" alt="Scaler Python Certificate" class="certificate-img" onclick="openModal(this.src)">
       <h3>Scaler Python Certificate</h3>
       <p>Python course completion by Scaler Academy</p>
     </div>
 
+    <!-- 🔹 Wadhwani Certificate (JPG) -->
     <div class="certificate-card">
       <img src="images/WADHANIa311f5aa.jpg" alt="Wadhwani Foundation Certificate" class="certificate-img" onclick="openModal(this.src)">
       <h3>Wadhwani Foundation Certificate</h3>
       <p>Entrepreneurship and Innovation training</p>
     </div>
 
+    <!-- 🔹 Deloitte Certificate (PDF) -->
     <div class="certificate-card">
-      <img src="images/CERTificate791af2a6.jpg" alt="Python Fundamentals" class="certificate-img" onclick="openModal(this.src)">
-      <h3>Python Fundamentals</h3>
-      <p>Recognized for exceptional performance</p>
-    </div>
-
-    <div class="certificate-card">
-      <img src="images/DELOITTEcertificate.pdf" alt="Deloitte Virtual Internship" class="certificate-img" onclick="openModal(this.src)">
+      <div class="pdf-thumbnail" onclick="openPDF('images/DELOITTEcertificate.pdf')">
+        <i class="fas fa-file-pdf"></i>
+        <p>View Deloitte Certificate</p>
+      </div>
       <h3>Deloitte Virtual Internship</h3>
       <p>Completed Deloitte Technology Consulting Program</p>
     </div>
 
+    <!-- 🔹 Eduskills AI-ML Internship (PDF) -->
     <div class="certificate-card">
-      <img src="images/SkillsScoreCard.pdf" alt="Wadhwani Skills Score Card" class="certificate-img" onclick="openModal(this.src)">
-      <h3>Wadhwani Skills Score Card</h3>
-      <p>Technical and analytical skills assessment</p>
+      <div class="pdf-thumbnail" onclick="openPDF('images/ai-ml intership 454120.pdf')">
+        <i class="fas fa-file-pdf"></i>
+        <p>Open AI-ML Internship Certificate</p>
+      </div>
+      <h3>AI-ML Virtual Internship</h3>
+      <p>Google & Eduskills Virtual Internship Certificate</p>
     </div>
 
+    <!-- 🔹 Wadhwani ScoreCard (PDF) -->
     <div class="certificate-card">
-      <img src="images/ai-ml intership 454120.pdf" alt="Eduskills AI-ML Internship Certificate" class="certificate-img" onclick="openModal(this.src)">
-      <h3>Eduskills AI-ML Internship</h3>
-      <p>Google Artificial Intelligence and Machine Learning Virtual Internship</p>
+      <div class="pdf-thumbnail" onclick="openPDF('images/SkillsScoreCard.pdf')">
+        <i class="fas fa-file-pdf"></i>
+        <p>Open Wadhwani Skills Score Card</p>
+      </div>
+      <h3>Wadhwani Skills ScoreCard</h3>
+      <p>Technical and analytical skill assessment</p>
     </div>
 
+    <!-- 🔹 Simplilearn Certificate 1 (PDF) -->
     <div class="certificate-card">
-      <img src="images/8470834_85200881749994789436.pdf" alt="Simplilearn Certificate 1" class="certificate-img" onclick="openModal(this.src)">
-      <h3>Simplilearn Certificate 1</h3>
-      <p>Machine Learning Using Python</p>
+      <div class="pdf-thumbnail" onclick="openPDF('images/8470834_85200881749994789436.pdf')">
+        <i class="fas fa-file-pdf"></i>
+        <p>Open Simplilearn Certificate 1</p>
+      </div>
+      <h3>Machine Learning with Python</h3>
+      <p>Completion certificate from Simplilearn</p>
     </div>
 
+    <!-- 🔹 Simplilearn Certificate 2 (PDF) -->
     <div class="certificate-card">
-      <img src="images/8519669_85200881750874900752.pdf" alt="Simplilearn Certificate 2" class="certificate-img" onclick="openModal(this.src)">
-      <h3>Simplilearn Certificate 2</h3>
-      <p>Introduction to Artificial Intelligence</p>
+      <div class="pdf-thumbnail" onclick="openPDF('images/8519669_85200881750874900752.pdf')">
+        <i class="fas fa-file-pdf"></i>
+        <p>Open Simplilearn Certificate 2</p>
+      </div>
+      <h3>Introduction to AI</h3>
+      <p>AI foundations from Simplilearn</p>
     </div>
 
-  </div>
-</div> 
+  </div> <!-- End certificates-gallery -->
+</div>
 
 
   <!-- VIDEO PAGE -->
