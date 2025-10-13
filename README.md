@@ -953,108 +953,84 @@
   </div>
 
   <div class="certificates-gallery">
-  <!-- ============================================= -->
-  <!-- 🏆 CERTIFICATE GALLERY SECTION                -->
-  <!-- NOTE: To add new certificates in the future:  -->
-  <!-- 1️⃣ Add your image inside 'images/' folder.   -->
-  <!-- 2️⃣ Copy one <div class="certificate-card">   -->
-  <!-- 3️⃣ Change the src & title text accordingly.  -->
-  <!-- ============================================= -->
+
+  <!-- ====================================================== -->
+  <!-- 🏆 CERTIFICATES SECTION — Auto-mapped from /images/ -->
+  <!-- Tip: Add new certificate (JPG/PDF) → copy any card -->
+  <!-- ====================================================== -->
 
   <div class="certificate-card">
-    <img src="images/certificate1.jpg" alt="Python Certificate" class="certificate-img" onclick="openModal(this.src)">
-    <h3>Python Basics Certificate</h3>
-    <p>Completed introductory Python programming course</p>
+    <img src="images/scaler python certificate.jpg" alt="Scaler Python Certificate" class="certificate-img" onclick="openModal(this.src)">
+    <h3>Scaler Python Certificate</h3>
+    <p>Python course completion certificate by Scaler Academy</p>
   </div>
 
   <div class="certificate-card">
-    <img src="images/certificate2.jpg" alt="AI Fundamentals" class="certificate-img" onclick="openModal(this.src)">
-    <h3>AI Fundamentals</h3>
-    <p>Learned basics of Artificial Intelligence and ML</p>
+    <img src="images/WADHANIa311f5aa.jpg" alt="Wadhwani Foundation Certificate" class="certificate-img" onclick="openModal(this.src)">
+    <h3>Wadhwani Foundation Certificate</h3>
+    <p>Entrepreneurship and innovation training program</p>
   </div>
 
   <div class="certificate-card">
-    <img src="images/certificate3.jpg" alt="Web Development" class="certificate-img" onclick="openModal(this.src)">
-    <h3>Web Development Mastery</h3>
-    <p>Completed HTML, CSS, and JavaScript full course</p>
+    <img src="images/CERTificate791af2a6.jpg" alt="General Certificate" class="certificate-img" onclick="openModal(this.src)">
+    <h3>Certification of Excellence</h3>
+    <p>Recognized for outstanding learning performance</p>
   </div>
 
   <div class="certificate-card">
-    <img src="images/certificate4.jpg" alt="Data Science" class="certificate-img" onclick="openModal(this.src)">
-    <h3>Data Science Certificate</h3>
-    <p>Trained on data analysis, visualization, and pandas</p>
+    <img src="images/DELOITTEcertificate.pdf" alt="Deloitte Certificate" class="certificate-img" onerror="this.src='https://via.placeholder.com/500x350/764ba2/ffffff?text=Deloitte+Certificate'">
+    <h3>Deloitte Virtual Internship</h3>
+    <p>Completed Deloitte Technology Consulting Virtual Program</p>
+    <a href="images/DELOITTEcertificate.pdf" target="_blank" class="btn btn-secondary" style="margin-top:1rem;">View PDF</a>
   </div>
 
   <div class="certificate-card">
-    <img src="images/certificate5.jpg" alt="Machine Learning" class="certificate-img" onclick="openModal(this.src)">
-    <h3>Machine Learning Concepts</h3>
-    <p>Explored ML algorithms and supervised learning</p>
+    <img src="images/SkillsScoreCard.pdf" alt="Skills Score Card" class="certificate-img" onerror="this.src='https://via.placeholder.com/500x350/667eea/ffffff?text=Score+Card'">
+    <h3>Skills Score Card</h3>
+    <p>Performance evaluation certificate for technical skills</p>
+    <a href="images/SkillsScoreCard.pdf" target="_blank" class="btn btn-secondary" style="margin-top:1rem;">View PDF</a>
   </div>
 
   <div class="certificate-card">
-    <img src="images/certificate6.jpg" alt="Database Management" class="certificate-img" onclick="openModal(this.src)">
-    <h3>Database Management</h3>
-    <p>SQL, MySQL, and relational database fundamentals</p>
+    <img src="images/Certification.pdf" alt="Certification PDF" class="certificate-img" onerror="this.src='https://via.placeholder.com/500x350/f093fb/ffffff?text=Certification'">
+    <h3>General Certification</h3>
+    <p>Validated professional learning and project skills</p>
+    <a href="images/Certification.pdf" target="_blank" class="btn btn-secondary" style="margin-top:1rem;">View PDF</a>
   </div>
 
   <div class="certificate-card">
-    <img src="images/certificate7.jpg" alt="Cybersecurity" class="certificate-img" onclick="openModal(this.src)">
-    <h3>Cybersecurity Essentials</h3>
-    <p>Learned network and system security fundamentals</p>
+    <img src="images/ai-ml intership 454120.pdf" alt="AI-ML Internship" class="certificate-img" onerror="this.src='https://via.placeholder.com/500x350/4ecdc4/ffffff?text=AI+ML+Internship'">
+    <h3>AI-ML Internship</h3>
+    <p>Artificial Intelligence & Machine Learning Internship Certificate</p>
+    <a href="images/ai-ml intership 454120.pdf" target="_blank" class="btn btn-secondary" style="margin-top:1rem;">View PDF</a>
   </div>
 
   <div class="certificate-card">
-    <img src="images/certificate8.jpg" alt="HTML & CSS" class="certificate-img" onclick="openModal(this.src)">
-    <h3>HTML & CSS Certificate</h3>
-    <p>Built visually stunning responsive web layouts</p>
+    <img src="images/8470834_85200881749994789436.pdf" alt="Wadhwani Certificate 1" class="certificate-img" onerror="this.src='https://via.placeholder.com/500x350/764ba2/ffffff?text=Wadhwani+1'">
+    <h3>Wadhwani Foundation Certificate 1</h3>
+    <p>Completed Wadhwani Entrepreneurship Foundation Course</p>
+    <a href="images/8470834_85200881749994789436.pdf" target="_blank" class="btn btn-secondary" style="margin-top:1rem;">View PDF</a>
   </div>
 
   <div class="certificate-card">
-    <img src="images/certificate9.jpg" alt="JavaScript" class="certificate-img" onclick="openModal(this.src)">
-    <h3>JavaScript Proficiency</h3>
-    <p>Mastered JS DOM manipulation and event handling</p>
+    <img src="images/8519669_85200881750874900752.pdf" alt="Wadhwani Certificate 2" class="certificate-img" onerror="this.src='https://via.placeholder.com/500x350/667eea/ffffff?text=Wadhwani+2'">
+    <h3>Wadhwani Foundation Certificate 2</h3>
+    <p>Project-based Entrepreneurship and Startup Program</p>
+    <a href="images/8519669_85200881750874900752.pdf" target="_blank" class="btn btn-secondary" style="margin-top:1rem;">View PDF</a>
   </div>
 
   <div class="certificate-card">
-    <img src="images/certificate10.jpg" alt="Git & GitHub" class="certificate-img" onclick="openModal(this.src)">
-    <h3>Git & GitHub</h3>
-    <p>Learned version control and project collaboration</p>
+    <img src="images/Wadhwani Foundation Certificate - 676665ace0bd2d735b7c0b25.pdf" alt="Wadhwani Certificate 3" class="certificate-img" onerror="this.src='https://via.placeholder.com/500x350/ff6b6b/ffffff?text=Wadhwani+3'">
+    <h3>Wadhwani Foundation Certificate 3</h3>
+    <p>Certificate of completion for innovation and entrepreneurship</p>
+    <a href="images/Wadhwani Foundation Certificate - 676665ace0bd2d735b7c0b25.pdf" target="_blank" class="btn btn-secondary" style="margin-top:1rem;">View PDF</a>
   </div>
 
   <div class="certificate-card">
-    <img src="images/certificate11.jpg" alt="UI/UX Design" class="certificate-img" onclick="openModal(this.src)">
-    <h3>UI/UX Design</h3>
-    <p>Understood user experience and interface design</p>
-  </div>
-
-  <div class="certificate-card">
-    <img src="images/certificate12.jpg" alt="Cloud Computing" class="certificate-img" onclick="openModal(this.src)">
-    <h3>Cloud Computing Basics</h3>
-    <p>Introduction to AWS, cloud architecture, and DevOps</p>
-  </div>
-
-  <div class="certificate-card">
-    <img src="images/certificate13.jpg" alt="DSA" class="certificate-img" onclick="openModal(this.src)">
-    <h3>Data Structures & Algorithms</h3>
-    <p>Mastered problem-solving and algorithmic logic</p>
-  </div>
-
-  <div class="certificate-card">
-    <img src="images/certificate14.jpg" alt="Networking" class="certificate-img" onclick="openModal(this.src)">
-    <h3>Computer Networking</h3>
-    <p>Learned OSI model, TCP/IP, and network protocols</p>
-  </div>
-
-  <div class="certificate-card">
-    <img src="images/certificate15.jpg" alt="AI Project" class="certificate-img" onclick="openModal(this.src)">
-    <h3>AI Mini Project</h3>
-    <p>Built a small AI voice assistant using Python</p>
-  </div>
-
-  <div class="certificate-card">
-    <img src="images/certificate16.jpg" alt="Freelance Achievement" class="certificate-img" onclick="openModal(this.src)">
-    <h3>Freelance Achievement</h3>
-    <p>Successfully delivered client-based web solutions</p>
+    <img src="images/Wadhwani Foundation Certificate - 67865826daa836b77e061177.pdf" alt="Wadhwani Certificate 4" class="certificate-img" onerror="this.src='https://via.placeholder.com/500x350/ffe66d/000000?text=Wadhwani+4'">
+    <h3>Wadhwani Foundation Certificate 4</h3>
+    <p>Training in entrepreneurial thinking and project creation</p>
+    <a href="images/Wadhwani Foundation Certificate - 67865826daa836b77e061177.pdf" target="_blank" class="btn btn-secondary" style="margin-top:1rem;">View PDF</a>
   </div>
 </div>
 
