@@ -729,6 +729,32 @@
         grid-template-columns: 1fr;
       }
     }
+    /* ✅ PDF Thumbnail Style */
+    .pdf-thumbnail {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 250px;
+      background: rgba(255,255,255,0.05);
+      border: 2px dashed rgba(255,255,255,0.2);
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s;
+      color: #ff6b6b;
+      font-size: 2rem;
+    }
+    
+    .pdf-thumbnail:hover {
+      background: rgba(255,255,255,0.1);
+      transform: scale(1.05);
+    }
+    
+    .pdf-thumbnail p {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #ddd;
+    }
   </style>
 </head>
 <body>
@@ -1214,6 +1240,10 @@
         closeModal();
       }
     });
+    // ✅ Function to open PDF in new tab (no flicker, no reload)
+    function openPDF(pdfPath) {
+      window.open(pdfPath, '_blank');
+    }
   </script>
 </body>
 </html>
