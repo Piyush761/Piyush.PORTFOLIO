@@ -952,36 +952,111 @@
     </div>
   </div>
 
-  <!-- CERTIFICATES PAGE -->
-  <div class="page" id="certificates">
-    <div class="section-header">
-      <h2>Certificates</h2>
-      <p>My achievements and credentials</p>
-    </div>
-    <div class="certificates-gallery">
-      <div class="certificate-card">
-        <!-- REPLACE THIS WITH YOUR CERTIFICATE IMAGE -->
-        <!-- Add your certificate as "certificate1.jpg" in the same folder -->
-        <img src="certificate1.jpg" alt="Certificate 1" class="certificate-img" onclick="openModal(this.src)" onerror="this.src='https://via.placeholder.com/500x350/667eea/ffffff?text=Certificate+1'">
-        <h3>Score Card Certificate</h3>
-        <p>Academic achievement certificate showcasing exceptional performance</p>
-      </div>
-      <div class="certificate-card">
-        <!-- REPLACE THIS WITH YOUR CERTIFICATE IMAGE -->
-        <!-- Add your certificate as "certificate2.jpg" in the same folder -->
-        <img src="certificate2.jpg" alt="Certificate 2" class="certificate-img" onclick="openModal(this.src)" onerror="this.src='https://via.placeholder.com/500x350/764ba2/ffffff?text=Certificate+2'">
-        <h3>Web Development Course</h3>
-        <p>Completed comprehensive web development training</p>
-      </div>
-      <div class="certificate-card">
-        <!-- REPLACE THIS WITH YOUR CERTIFICATE IMAGE -->
-        <!-- Add your certificate as "certificate3.jpg" in the same folder -->
-        <img src="certificate3.jpg" alt="Certificate 3" class="certificate-img" onclick="openModal(this.src)" onerror="this.src='https://via.placeholder.com/500x350/f093fb/ffffff?text=Certificate+3'">
-        <h3>Programming Fundamentals</h3>
-        <p>Mastered core programming concepts and best practices</p>
-      </div>
-    </div>
+  <div class="certificates-gallery">
+  <!-- ============================================= -->
+  <!-- 🏆 CERTIFICATE GALLERY SECTION                -->
+  <!-- NOTE: To add new certificates in the future:  -->
+  <!-- 1️⃣ Add your image inside 'images/' folder.   -->
+  <!-- 2️⃣ Copy one <div class="certificate-card">   -->
+  <!-- 3️⃣ Change the src & title text accordingly.  -->
+  <!-- ============================================= -->
+
+  <div class="certificate-card">
+    <img src="images/certificate1.jpg" alt="Python Certificate" class="certificate-img" onclick="openModal(this.src)">
+    <h3>Python Basics Certificate</h3>
+    <p>Completed introductory Python programming course</p>
   </div>
+
+  <div class="certificate-card">
+    <img src="images/certificate2.jpg" alt="AI Fundamentals" class="certificate-img" onclick="openModal(this.src)">
+    <h3>AI Fundamentals</h3>
+    <p>Learned basics of Artificial Intelligence and ML</p>
+  </div>
+
+  <div class="certificate-card">
+    <img src="images/certificate3.jpg" alt="Web Development" class="certificate-img" onclick="openModal(this.src)">
+    <h3>Web Development Mastery</h3>
+    <p>Completed HTML, CSS, and JavaScript full course</p>
+  </div>
+
+  <div class="certificate-card">
+    <img src="images/certificate4.jpg" alt="Data Science" class="certificate-img" onclick="openModal(this.src)">
+    <h3>Data Science Certificate</h3>
+    <p>Trained on data analysis, visualization, and pandas</p>
+  </div>
+
+  <div class="certificate-card">
+    <img src="images/certificate5.jpg" alt="Machine Learning" class="certificate-img" onclick="openModal(this.src)">
+    <h3>Machine Learning Concepts</h3>
+    <p>Explored ML algorithms and supervised learning</p>
+  </div>
+
+  <div class="certificate-card">
+    <img src="images/certificate6.jpg" alt="Database Management" class="certificate-img" onclick="openModal(this.src)">
+    <h3>Database Management</h3>
+    <p>SQL, MySQL, and relational database fundamentals</p>
+  </div>
+
+  <div class="certificate-card">
+    <img src="images/certificate7.jpg" alt="Cybersecurity" class="certificate-img" onclick="openModal(this.src)">
+    <h3>Cybersecurity Essentials</h3>
+    <p>Learned network and system security fundamentals</p>
+  </div>
+
+  <div class="certificate-card">
+    <img src="images/certificate8.jpg" alt="HTML & CSS" class="certificate-img" onclick="openModal(this.src)">
+    <h3>HTML & CSS Certificate</h3>
+    <p>Built visually stunning responsive web layouts</p>
+  </div>
+
+  <div class="certificate-card">
+    <img src="images/certificate9.jpg" alt="JavaScript" class="certificate-img" onclick="openModal(this.src)">
+    <h3>JavaScript Proficiency</h3>
+    <p>Mastered JS DOM manipulation and event handling</p>
+  </div>
+
+  <div class="certificate-card">
+    <img src="images/certificate10.jpg" alt="Git & GitHub" class="certificate-img" onclick="openModal(this.src)">
+    <h3>Git & GitHub</h3>
+    <p>Learned version control and project collaboration</p>
+  </div>
+
+  <div class="certificate-card">
+    <img src="images/certificate11.jpg" alt="UI/UX Design" class="certificate-img" onclick="openModal(this.src)">
+    <h3>UI/UX Design</h3>
+    <p>Understood user experience and interface design</p>
+  </div>
+
+  <div class="certificate-card">
+    <img src="images/certificate12.jpg" alt="Cloud Computing" class="certificate-img" onclick="openModal(this.src)">
+    <h3>Cloud Computing Basics</h3>
+    <p>Introduction to AWS, cloud architecture, and DevOps</p>
+  </div>
+
+  <div class="certificate-card">
+    <img src="images/certificate13.jpg" alt="DSA" class="certificate-img" onclick="openModal(this.src)">
+    <h3>Data Structures & Algorithms</h3>
+    <p>Mastered problem-solving and algorithmic logic</p>
+  </div>
+
+  <div class="certificate-card">
+    <img src="images/certificate14.jpg" alt="Networking" class="certificate-img" onclick="openModal(this.src)">
+    <h3>Computer Networking</h3>
+    <p>Learned OSI model, TCP/IP, and network protocols</p>
+  </div>
+
+  <div class="certificate-card">
+    <img src="images/certificate15.jpg" alt="AI Project" class="certificate-img" onclick="openModal(this.src)">
+    <h3>AI Mini Project</h3>
+    <p>Built a small AI voice assistant using Python</p>
+  </div>
+
+  <div class="certificate-card">
+    <img src="images/certificate16.jpg" alt="Freelance Achievement" class="certificate-img" onclick="openModal(this.src)">
+    <h3>Freelance Achievement</h3>
+    <p>Successfully delivered client-based web solutions</p>
+  </div>
+</div>
 
   <!-- VIDEO PAGE -->
   <div class="page" id="video">
