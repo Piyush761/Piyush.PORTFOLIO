@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -951,88 +952,63 @@
       </div>
     </div>
   </div>
+  
+  <!-- CERTIFICATES PAGE -->
+  <div class="page" id="certificates">
+    <div class="section-header">
+      <h2>Certificates</h2>
+      <p>My achievements and credentials</p>
+    </div>
+    <div class="certificates-gallery">
+      <div class="certificate-card">
+        <img src="images/scaler-python-certificate.jpg" alt="Scaler Python Certificate" class="certificate-img" onclick="openModal(this.src)">
+        <h3>Scaler Python Certificate</h3>
+        <p>Python course completion by Scaler Academy</p>
+      </div>
 
-  <div class="certificates-gallery">
+      <div class="certificate-card">
+        <img src="images/WADHANIa311f5aa.jpg" alt="Wadhwani Foundation Certificate" class="certificate-img" onclick="openModal(this.src)">
+        <h3>Wadhwani Foundation Certificate</h3>
+        <p>Entrepreneurship and Innovation training</p>
+      </div>
 
-  <!-- ====================================================== -->
-  <!-- 🏆 CERTIFICATES SECTION — Auto-mapped from /images/ -->
-  <!-- Tip: Add new certificate (JPG/PDF) → copy any card -->
-  <!-- ====================================================== -->
+      <div class="certificate-card">
+        <img src="images/CERtificate791af2a6.jpg" alt="Python fundamentals" class="certificate-img" onclick="openModal(this.src)">
+        <h3>Python fundamentals</h3>
+        <p>Recognized for exceptional performance</p>
+      </div>
 
-  <div class="certificate-card">
-    <img src="images/scaler python certificate.jpg" alt="Scaler Python Certificate" class="certificate-img" onclick="openModal(this.src)">
-    <h3>Scaler Python Certificate</h3>
-    <p>Python course completion certificate by Scaler Academy</p>
+      <div class="certificate-card">
+        <img src="images/DELOITTEcertificate.jpg" alt="Deloitte Virtual Internship" class="certificate-img" onclick="openModal(this.src)">
+        <h3>Deloitte Virtual Internship</h3>
+        <p>Completed Deloitte Technology Consulting Program</p>
+      </div>
+
+      <div class="certificate-card">
+        <img src="images/SkillsScoreCard.jpg" alt="Wadhwani Skills Score Card" class="certificate-img" onclick="openModal(this.src)">
+        <h3>Wadhwani Skills Score Card</h3>
+        <p>Technical and analytical skills assessment</p>
+      </div>
+
+      <div class="certificate-card">
+        <img src="images/ai-ml-intership-454120.jpg" alt="Eduskills AI-ML Internship Certificate" class="certificate-img" onclick="openModal(this.src)">
+        <h3>Eduskills AI-ML Internship</h3>
+        <p>Google Artificial Intelligence and Machine Learning Virtual Internship</p>
+      </div>
+
+      <div class="certificate-card">
+        <img src="images/8470834_85200881749994789436.jpg" alt="Simplilearn Certificate 1" class="certificate-img" onclick="openModal(this.src)">
+        <h3>Simplilearn Certificate 1</h3>
+        <p>Machine Learning Using Python</p>
+      </div>
+
+      <div class="certificate-card">
+        <img src="images/8519669_85200881750874900752.jpg" alt="Simplilearn Certificate 2" class="certificate-img" onclick="openModal(this.src)">
+        <h3>Simplilearn Certificate 2</h3>
+        <p>Introduction to Artificial Intelligence</p>
+      </div>
+    </div>
   </div>
-
-  <div class="certificate-card">
-    <img src="images/WADHANIa311f5aa.jpg" alt="Wadhwani Foundation Certificate" class="certificate-img" onclick="openModal(this.src)">
-    <h3>Wadhwani Foundation Certificate</h3>
-    <p>Entrepreneurship and innovation training program</p>
-  </div>
-
-  <div class="certificate-card">
-    <img src="images/CERTificate791af2a6.jpg" alt="General Certificate" class="certificate-img" onclick="openModal(this.src)">
-    <h3>Certification of Excellence</h3>
-    <p>Recognized for outstanding learning performance</p>
-  </div>
-
-  <div class="certificate-card">
-    <img src="images/DELOITTEcertificate.pdf" alt="Deloitte Certificate" class="certificate-img" onerror="this.src='https://via.placeholder.com/500x350/764ba2/ffffff?text=Deloitte+Certificate'">
-    <h3>Deloitte Virtual Internship</h3>
-    <p>Completed Deloitte Technology Consulting Virtual Program</p>
-    <a href="images/DELOITTEcertificate.pdf" target="_blank" class="btn btn-secondary" style="margin-top:1rem;">View PDF</a>
-  </div>
-
-  <div class="certificate-card">
-    <img src="images/SkillsScoreCard.pdf" alt="Skills Score Card" class="certificate-img" onerror="this.src='https://via.placeholder.com/500x350/667eea/ffffff?text=Score+Card'">
-    <h3>Skills Score Card</h3>
-    <p>Performance evaluation certificate for technical skills</p>
-    <a href="images/SkillsScoreCard.pdf" target="_blank" class="btn btn-secondary" style="margin-top:1rem;">View PDF</a>
-  </div>
-
-  <div class="certificate-card">
-    <img src="images/Certification.pdf" alt="Certification PDF" class="certificate-img" onerror="this.src='https://via.placeholder.com/500x350/f093fb/ffffff?text=Certification'">
-    <h3>General Certification</h3>
-    <p>Validated professional learning and project skills</p>
-    <a href="images/Certification.pdf" target="_blank" class="btn btn-secondary" style="margin-top:1rem;">View PDF</a>
-  </div>
-
-  <div class="certificate-card">
-    <img src="images/ai-ml intership 454120.pdf" alt="AI-ML Internship" class="certificate-img" onerror="this.src='https://via.placeholder.com/500x350/4ecdc4/ffffff?text=AI+ML+Internship'">
-    <h3>AI-ML Internship</h3>
-    <p>Artificial Intelligence & Machine Learning Internship Certificate</p>
-    <a href="images/ai-ml intership 454120.pdf" target="_blank" class="btn btn-secondary" style="margin-top:1rem;">View PDF</a>
-  </div>
-
-  <div class="certificate-card">
-    <img src="images/8470834_85200881749994789436.pdf" alt="Wadhwani Certificate 1" class="certificate-img" onerror="this.src='https://via.placeholder.com/500x350/764ba2/ffffff?text=Wadhwani+1'">
-    <h3>Wadhwani Foundation Certificate 1</h3>
-    <p>Completed Wadhwani Entrepreneurship Foundation Course</p>
-    <a href="images/8470834_85200881749994789436.pdf" target="_blank" class="btn btn-secondary" style="margin-top:1rem;">View PDF</a>
-  </div>
-
-  <div class="certificate-card">
-    <img src="images/8519669_85200881750874900752.pdf" alt="Wadhwani Certificate 2" class="certificate-img" onerror="this.src='https://via.placeholder.com/500x350/667eea/ffffff?text=Wadhwani+2'">
-    <h3>Wadhwani Foundation Certificate 2</h3>
-    <p>Project-based Entrepreneurship and Startup Program</p>
-    <a href="images/8519669_85200881750874900752.pdf" target="_blank" class="btn btn-secondary" style="margin-top:1rem;">View PDF</a>
-  </div>
-
-  <div class="certificate-card">
-    <img src="images/Wadhwani Foundation Certificate - 676665ace0bd2d735b7c0b25.pdf" alt="Wadhwani Certificate 3" class="certificate-img" onerror="this.src='https://via.placeholder.com/500x350/ff6b6b/ffffff?text=Wadhwani+3'">
-    <h3>Wadhwani Foundation Certificate 3</h3>
-    <p>Certificate of completion for innovation and entrepreneurship</p>
-    <a href="images/Wadhwani Foundation Certificate - 676665ace0bd2d735b7c0b25.pdf" target="_blank" class="btn btn-secondary" style="margin-top:1rem;">View PDF</a>
-  </div>
-
-  <div class="certificate-card">
-    <img src="images/Wadhwani Foundation Certificate - 67865826daa836b77e061177.pdf" alt="Wadhwani Certificate 4" class="certificate-img" onerror="this.src='https://via.placeholder.com/500x350/ffe66d/000000?text=Wadhwani+4'">
-    <h3>Wadhwani Foundation Certificate 4</h3>
-    <p>Training in entrepreneurial thinking and project creation</p>
-    <a href="images/Wadhwani Foundation Certificate - 67865826daa836b77e061177.pdf" target="_blank" class="btn btn-secondary" style="margin-top:1rem;">View PDF</a>
-  </div>
-</div>
 
   <!-- VIDEO PAGE -->
   <div class="page" id="video">
@@ -1200,15 +1176,15 @@
 
     // Observe when skills section comes into view
     const skillsSection = document.getElementById('skills');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          animateProgressBars();
-        }
-      });
-    }, { threshold: 0.5 });
-
     if (skillsSection) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateProgressBars();
+          }
+        });
+      }, { threshold: 0.5 });
+
       observer.observe(skillsSection);
     }
 
